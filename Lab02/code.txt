@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title> Parth's Website</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+<main>
+
+  <img src="Parth.jpg" alt="IMG NOT LOADING">
+
+  <h1 id="MainHeading">Parth Patel</h1>
+  <p> <b> Computer Science Student </b> </p>
+  <p class="Studentnumber"> Student#: 500893723</p>
+</main>
+  <hr>
+
+  <p class="Studentnumber"><em> Hi, my name is Parth Patel. I am a 2<sup>nd</sup> year student
+      attending Ryerson University for Computer Science
+      B.Sc. program.</em></p>
+  <hr>
+
+
+    <p>Courses taken so far</p>
+    <hr class="coursesSeperator">
+
+    <table class="courses">
+
+      <tr>
+        <td>Data Structures</td>
+      </tr>
+      <tr>
+        <td>Calculus</td>
+      </tr>
+      <tr>
+        <td>Linear Algebra</td>
+      </tr>
+      <tr>
+        <td>Computer Architecture</td>
+      </tr>
+    </table>
+
+
+
+
+
+    <p>Profiency in Computer Programming Languages</p>
+    <hr class="languagesSeperator">
+
+    <table class="Skill">
+      <thead>
+        <th>Languages</th>
+        <th>Skill</th>
+      </thead>
+      <tr>
+        <td>JAVA</td>
+        <td>? ? ? ? </td>
+      </tr>
+
+      <tr>
+        <td>Python</td>
+        <td>? ? ? </td>
+      </tr>
+
+      <tr>
+        <td>JavaScript</td>
+        <td>? ? ? ? ?</td>
+      </tr>
+
+      <tr>
+        <td>HTML/CSS</td>
+        <td>? ? ? ?</td>
+      </tr>
+
+    </table>
+
+
+
+
+
+    <footer>
+    <a href="ValidationReport.html" style="color:black"> Validation Report </a><br>
+    <a href="Technical.html" style="color:black">Technical Report</a>
+    </footer>
+
+</body>
+
+</html>

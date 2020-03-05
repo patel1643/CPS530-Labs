@@ -1,0 +1,66 @@
+body {
+  background: #2980b9;
+  background: -webkit-linear-gradient(to top, #2c3e50, #2980b9);
+  background: linear-gradient(to top, #2c3e50, #2980b9);
+  text-align: center;
+}
+
+h1 {
+  font-family: "Roboto";
+  color: #00b8a9
+}
+
+#MainHeading {
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Calibri";
+  color: #c2ffff
+}
+
+.Studentnumber {
+  font-family: Satisfy, cursive;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+hr {
+  background-color: grey;
+  border-style: none;
+  height: 1px;
+  width: 65%;
+}
+
+img {
+  height: 200px;
+  border-radius: 55%;
+}
+
+.courses {
+  margin: auto;
+  min-width: 350px;
+  text-align: center;
+  font-family: "Calibri";
+}
+
+.Skill {
+  margin: auto;
+  min-width: 350px;
+  text-align: center;
+  font-family: "Calibri";
+}
+
+.coursesSeperator {
+  background-color: grey;
+  border-style: none;
+  height: 1px;
+  width: 15%;
+}
+
+.languagesSeperator {
+  background-color: grey;
+  border-style: none;
+  height: 1px;
+  width: 30%;
+}
