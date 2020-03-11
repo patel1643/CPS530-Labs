@@ -1,0 +1,42 @@
+#!/usr/bin/ruby
+print "Content-type: text/html\n\n"
+require 'cgi'
+cgi = CGI.new
+
+
+
+$name = cgi['name']
+$address = cgi['Address']
+$number = cgi['phone']
+
+$phone_str = $number.to_s
+$phone_List = $phone_str.split('-')
+
+
+
+
+puts "<p style='font-size:100px;'>"
+puts $name
+puts "<br>"
+puts $address.split.map(&:capitalize).join(' ')
+puts "<br>"
+
+print <<"HTML CODE";
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Wallpoet&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style media="screen">
+body{
+text-align:center;
+font-family: 'Roboto Mono', monospace;
+
+}
+
+</style>
+
+HTML CODE
+puts "<span class='w3-center w3-animate-right'>"+"("+$phone_List[0]+")-"+"</span><span class='w3-center w3-animate-top'>"
+puts $phone_List[1]+"-"+"</span><span class='w3-center w3-animate-bottom'>"+$phone_List[2]
+puts "</span>"
+puts "</p>"
+EOF

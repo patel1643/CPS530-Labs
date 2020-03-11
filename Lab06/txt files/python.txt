@@ -1,0 +1,44 @@
+#!/usr/bin/python
+import cgi, cgitb
+form = cgi.FieldStorage()
+name = form.getvalue('name')
+address = form.getvalue('Address')
+number = form.getvalue('phone')
+phone_list = number.split('-')
+
+print "Content-type:text/html\n\n"
+
+print "<!DOCTYPE html>"
+print "<html>"
+print "<head>"
+print "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>"
+print "<link href='https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap' rel='stylesheet'>"
+print "<title>Lab6P2</title>"
+print "<script>"
+print "$(document).ready(function () {"
+print "$('#1').animate({left: '330px'},'slow');"
+print "$('#1').animate({fontSize: '4em'}, 'fast');"
+print "$('#2').animate({left: '630px'},'slow');"
+print "$('#2').animate({fontSize: '4em'}, 'slow');"
+print "$('#3').animate({left: '800px'},'slow');"
+print "$('#3').animate({fontSize: '4em'}, 'medium');"
+print "});"
+print "</script>"
+print "</head>"
+print "<style media='screen'>"
+print "body{background-color:black;}"
+print "#name,#address{font-family: 'ZCOOL KuaiLe', cursive; font-size: 5rem; padding-top:160px; color:orange;}" 
+print "#1,#2{font-family: 'ZCOOL KuaiLe', cursive; font-size: 5rem; padding-top:150px;}"
+
+
+print "</style>"
+print "<body>"
+print "<div id='1' style='padding-top:50px;font-family:ZCOOL KuaiLe;color:green;height:100px;width200px;position:absolute;'>Tel:(%s)-</div>" % (phone_list[0])
+print "<div id='2' style='padding-top:50px;font-family:ZCOOL KuaiLe;color:blue;height:100px;width200px;position:absolute;'>%s-</div>" % (phone_list[1])
+print "<div id='3' style='padding-top:50px;font-family:ZCOOL KuaiLe;color:red;height:100px;width200px;position:absolute;'> %s</div>" % (phone_list[2])
+print "<div id='name'><center>Name: %s</center></div>" % (name)
+print "<div id='address'><center>Address: %s</center></div>" % (address)
+
+print "</body>"
+print "</html>"
+EOF
