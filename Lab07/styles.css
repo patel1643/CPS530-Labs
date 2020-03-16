@@ -1,0 +1,79 @@
+body{
+  background-color: black;
+  text-align: center;
+
+}
+
+h1{
+  color: lightgreen;
+
+}
+
+h3{
+  color: powderblue;
+}
+
+
+.Potato{
+  position: relative;
+  top: 0;
+  left: 0;
+
+}
+
+.lips{
+
+  position: absolute;
+  top: 500px;
+  left: 610px;
+  height: 10%;
+  width: 10%;
+  display: none;
+
+}
+
+.ears_left{  position: absolute;
+  top: 350px;
+  left: 520px;
+  height: 15%;
+  width: 7%;
+  display: none;
+
+}
+
+.ears_right{
+transform: rotate(-20deg);
+  position: absolute;
+    top: 350px;
+    left: 730px;
+    height: 15%;
+    width: 7%;
+    display: none;
+}
+
+.nose-img{
+display: none;
+    position: absolute;
+    top: 390px;
+    left: 630px;
+    height: 15%;
+    width: 7%;
+}
+
+.img-eyes{
+  display: none;
+  position: absolute;
+  top: 290px;
+  left: 593px;
+  height: 15%;
+  width: 12%;
+}
+
+.img-hat{
+display: none;
+  position: absolute;
+  top: 180px;
+  left: 580px;
+  height: 20%;
+  width: 15%;
+}
