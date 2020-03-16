@@ -1,0 +1,25 @@
+body{
+  background:url(https://i.imgur.com/FESiVv4.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+h1{
+  color: white;
+}
+
+p{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#imageUrl{
+  height: 300px;
+  width: 300px;
+  border-radius: 50px;
+}
+
+
+#info{
+}

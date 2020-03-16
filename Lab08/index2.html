@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles2.css">
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <title>Lab 08</title>
+    </head>
+    <body>
+        <h1>Lab 08 Part-1</h1>
+        <table>
+            <tr>
+                <p><img id="imageUrl" src="http://s20.postimg.cc/ja1wu6u8t/sumibcay.jpg"></span></p>
+            </tr>
+            <tr>
+                <div><p>Artist Name: <span id="artist">Josh Sumibcay</span></p></div>
+            </tr>
+            <tr>
+                <div><p>Song Name: <span id="songName">The Water Is Wide [2011]</span></p></div>
+            </tr>
+            <tr>
+                <div><p>Album Name: <span id="album">So Free</span></p></div>
+            </tr>
+        </table>
+    </body>
+</html>
+<script>
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function(){
+        if (this.readyState == 4 && this.status == 200){
+            sendElements(this);
+        }
+    };
+    xmlhttp.open("GET","streaminfo.xml", true);
+    xmlhttp.send();
+
+    function sendElements(xml){
+        var doc;
+        doc = xml.responseXML;
+        document.getElementById("artist").innerHTML = doc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
+        document.getElementById("songName").innerHTML = doc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
+        document.getElementById("album").innerHTML = doc.getElementsByTagName("album")[0].childNodes[0].nodeValue;
+        var imageUrl = doc.getElementsByTagName("imageurl")[0].childNodes[0].nodeValue;
+        document.getElementById("imageUrl").innerHTML = "<img src='"+imageUrl+"'>";
+    }
+</script>

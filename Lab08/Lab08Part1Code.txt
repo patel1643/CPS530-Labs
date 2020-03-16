@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./CSSLab08.css">
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <title>Lab 08</title>
+    </head>
+    <body>
+        <h1>This is my webpage for Lab 08 Part 1</h1>
+        <table>
+            <tr>
+                <p><span id="imageUrl"></span></p>
+            </tr>
+            <tr>
+                <div><p>Artist Name: <span id="artist"></span></p></div>
+            </tr>
+            <tr>
+                <div><p>Song Name: <span id="songName"></span></p></div>
+            </tr>
+            <tr>
+                <div><p>Album Name: <span id="album"></span></p></div>
+            </tr>
+        </table>
+    </body>
+</html>
+<script type="text/JavaScript">
+    $.getJSON("lab08Part2.json", function(json) {
+        console.log(json);
+        document.getElementById("artist").innerHTML = json.response.data.item.track.artist;
+        document.getElementById("songName").innerHTML = json.response.data.item.track.title;
+        document.getElementById("album").innerHTML = json.response.data.item.track.album;
+        var imageUrl = json.response.data.item.track.imageurl;
+        document.getElementById("imageUrl").innerHTML = "<img src='"+imageUrl+"'>";
+
+    });
+</script>

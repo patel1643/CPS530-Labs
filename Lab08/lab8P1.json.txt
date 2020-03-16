@@ -1,0 +1,49 @@
+<response type="result">
+<data>
+<item>
+<title>Yimago 2 / Hawaiian Music Radio</title>
+<song>Josh Sumibcay - The Water Is Wide [2011]</song>
+<track>
+<artist>Josh Sumibcay</artist>
+<title>The Water Is Wide [2011]</title>
+<album>So Free</album>
+<royaltytrackid>0</royaltytrackid>
+<started>1575055457</started>
+<id>43187</id>
+<length>0</length>
+<playlist>
+<id>1579</id>
+<title>Y2 > General</title>
+</playlist>
+<buyurl/>
+<imageurl>http://s20.postimg.cc/ja1wu6u8t/sumibcay.jpg</imageurl>
+</track>
+<bitrate>64 Kbps</bitrate>
+<server>Online</server>
+<autodj>Online</autodj>
+<source>Yes</source>
+<offline/>
+<summary>
+<a href="http://199.195.194.92:2199/tunein/-stream/meyima03.pls">Yimago 2 / Hawaiian Music Radio - Josh Sumibcay - The Water Is Wide [2011]</a>
+</summary>
+<listeners>2</listeners>
+<maxlisteners>100</maxlisteners>
+<reseller>0</reseller>
+<serverstate>1</serverstate>
+<sourcestate>1</sourcestate>
+<sourceconn>1</sourceconn>
+<date>Nov 29, 2019</date>
+<time>09:26 AM</time>
+<rawmeta>Josh Sumibcay - The Water Is Wide [2011]</rawmeta>
+<mountpoint>/stream</mountpoint>
+<tuneinurl>http://199.195.194.94:8183/stream</tuneinurl>
+<directtuneinurl/>
+<proxytuneinurl/>
+<tuneinformat>aac</tuneinformat>
+<webplayer>muses</webplayer>
+<servertype>ShoutCast2</servertype>
+<listenertotal>2</listenertotal>
+<url>http://199.195.194.92:2199/rpc</url>
+</item>
+</data>
+</response>
